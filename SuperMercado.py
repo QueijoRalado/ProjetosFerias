@@ -3,6 +3,15 @@ carrinho = []
 valor_compras = 0
 n_produtos = 0
 
+"""
+QueijoRalado falando, talvez esse código não seja tão simples quanto os outros em que estive trabalhando nessas férias, e decidi me desafiar o fazendo, já que acreditei que nenhum
+exercício me fazia pensar como os exercícios que meu professor me dava durante os períodos das aulas, tem coisas que pretendo aprimorar, como adicionar uma ferramenta para remover
+algum item desejado da lista, ou uma ferramenta que te permite escolher os quilos e unidades de um item, ou uma ferramenta que junta os itens repetidos em um único item... enfim, 
+alguma hora eu faço isso, não agora, por enquanto essa é a base de um sistema simples de super mercado que eu tive a ideia de fazer
+
+bom dia, boa tarde e boa noite
+"""
+
 # ------------------------------------------------------------- SETOR ALIMENTÍCIO -------------------------------------------------------------
 congelados_açougue = {
     "Peito de Frango c/ Osso (KG)": 22.20,
