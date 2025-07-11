@@ -1,12 +1,17 @@
 body{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Michroma', sans-serif;
+    background-image: url(fundo_do_mar.jpeg)
 }
 
 nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 5px solid;
+    border-bottom: 5px rgb(150, 241, 188) solid;
+    background-color: rgba(0, 99, 82, 0.575);
+}
+h1, p, li{
+    color: rgb(136, 236, 243);
 }
 
 a{
@@ -28,12 +33,7 @@ ul{
     padding: 0;
     margin-top: 35px;
 }
-.titulo_super_especifico_principal{
-    margin-left: 100px;
-}
-.parte_super_especifica_principal{
-    margin-right: 400px;
-}
+
 
 .titulos{
     text-align: center;
