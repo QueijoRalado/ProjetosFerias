@@ -1,0 +1,41 @@
+body{
+    font-family: 'Dancing Script', cursive;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 5px solid;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;       
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 50px;
+    font-size: x-large;
+    padding: 0;
+    margin-top: 35px;
+}
+.titulo_super_especifico_principal{
+    margin-left: 100px;
+}
+.parte_super_especifica_principal{
+    margin-right: 400px;
+}
+
+.titulos{
+    text-align: center;
+    font-size: 70px;
+}
