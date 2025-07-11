@@ -1,17 +1,18 @@
 body{
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Bungee', sans-serif;
     background-image: url(fundo_do_mar.jpeg)
 }
 
 nav{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 5px rgb(150, 241, 188) solid;
     background-color: rgba(0, 99, 82, 0.575);
 }
 h1, p, li{
     color: rgb(136, 236, 243);
+    text-align: center;
 }
 
 a{
@@ -19,6 +20,7 @@ a{
     color: inherit;
     outline: none;       
 }
+
 a:hover{
     text-decoration: none;
     color: inherit;
@@ -34,8 +36,17 @@ ul{
     margin-top: 35px;
 }
 
-
 .titulos{
     text-align: center;
     font-size: 70px;
+}
+
+.sal_na_mao{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.na{
+    margin-top: 50px;
 }
