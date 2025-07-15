@@ -24,7 +24,7 @@ nav{
     height: 400px;
     overflow: hidden;
     border: 5px rgb(150, 241, 188) solid;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 .slides{
     width: 400%;
