@@ -1,15 +1,113 @@
 body{
     font-family: 'Bungee', sans-serif;
-    background-image: url(fundo_do_mar.jpeg)
+    background-image: url(IMG/fundo_do_mar.jpeg);
+    background-repeat: no-repeat;
+    background-color: rgb(40, 98, 223);
 }
 
 nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-bottom: 5px rgb(150, 241, 188) solid;
-    background-color: rgba(0, 99, 82, 0.575);
+    background-color: rgba(0, 99, 82, 0.938);
 }
+
+/* Parte do Carrossel */
+
+.slider{
+    margin-top: 170px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px rgb(150, 241, 188) solid;
+    border-radius: 3%;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid #20a6f2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+/* Fim da parte do Carrossel */
+
 h1, p, li{
     color: rgb(136, 236, 243);
     text-align: center;
@@ -38,15 +136,31 @@ ul{
 
 .titulos{
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
 }
 
 .sal_na_mao{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-top: 60px;
 }
 
 .na{
-    margin-top: 50px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texto_comeco{
+    margin-top: 110px;
+    width: 40%;
+}
+
+.texto_generico{
+    font-size: large;
 }
