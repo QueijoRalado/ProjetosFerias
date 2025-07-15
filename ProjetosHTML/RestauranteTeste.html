@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cantinho da Rosa</title>
-    <link rel="icon" href="oto_murangu.gif" type="image/jpg">
+    <title>SAL na MÃO</title>
+    <link rel="icon" href="IMG/oto_murangu.gif" type="image/jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,19 +14,79 @@
 <body>
     <nav>
     <a href="#">
-        <div class="sal_na_mao">
+        <div>
+            <img src="IMG/logo_provisoria.webp" alt="">
+        </div>
+    </a>
+        <ul class="nav-links">
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#nossa_historia">Nossa História</a></li>
+            <li><a href="#nossas_filiais">Nossas Filiais</a></li>
+            <li><a href="#loja_online">Loja Online</a></li>
+            <li><a href="#carrinho">Carrinho</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+        <div class="sal_na_mao" id="principal">
             <h1 class="titulos link_sem_barra_em_baixo">Sal</h1>
             <p class="na">na</p>
             <h1 class="titulos link_sem_barra_em_baixo">mão</h1>
         </div>
-    </a>
-        <ul class="nav-links parte_super_especifica_principal">
-            <li><a href="">Principal</a></li>
-            <li><a href="">Nossa História</a></li>
-            <li><a href="">Nossas Filiais</a></li>
-            <li><a href="">Loja Online</a></li>
-            <li><a href="">Carrinho</a></li>
-        </ul>
-    </nav>
+    <main class="main">
+     <div class="slider">
+        <div class="slides">
+            <!-- radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- fim radio buttons -->
+
+            <!-- slide images -->
+            <div class="slide first">
+                <img src="IMG/moqueca.png" alt="moqueca">
+            </div>
+            <div class="slide">
+                <img src="IMG/na_brasa.webp" alt="moqueca">
+            </div>
+            <div class="slide">
+                <img src="IMG/tainha.jpg" alt="moqueca">
+            </div>
+            <div class="slide">
+                <img src="IMG/tilapia.webp" alt="moqueca">
+            </div>
+            <!-- fim slide images -->
+
+            <!-- navigation auto -->
+             <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+             </div>
+
+        </div>
+       <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+       </div>
+    </div>
+    <div class="texto_comeco">
+    <p class="texto_generico">
+    Sal na Mão é um restaurante de comida marinha localizado no coração do bairro da Ribeira, às margens do porto antigo. Fundado em 1985 por Manuel dos Anjos, um ex-pescador 
+    apaixonado pelos sabores do mar, hoje é dirigido por sua filha, Clara dos Anjos, que trouxe novos ares sem jamais perder de vista a tradição familiar. Aqui, tradição e 
+    criatividade navegam lado a lado: receitas herdadas dos pescadores se encontram com a visão contemporânea que Clara imprime a cada prato. Entre nossos valores essenciais está o 
+    acolhimento. Sal na Mão é um espaço pensado para todos: famílias, viajantes, moradores locais e amantes da culinária marinha vindos de longe. A cozinha, como gosta de dizer Clara, 
+    é feita “com o olhar voltado ao oceano e o coração ancorado na terra natal”. O reconhecimento desse trabalho veio de diversas formas. Em 2022, o restaurante conquistou o 52º lugar 
+    na lista dos melhores da América Latina pela revista Restaurant. Em 2023, recebeu o selo Bib Gourmand do Guia Michelin, celebrando a excelência a preços justos. E em 2020 foi 
+    eleito pelo World Restaurant Awards como o melhor restaurante do mundo na categoria “sabores autênticos”. Mais do que servir frutos do mar, o Sal na Mão oferece uma experiência 
+    de encontro: entre gerações, entre memória e modernidade, entre o sabor salgado das ondas e o calor do afeto.
+    </p>
+    </div>
+    </main>
+
+    <script src="JS/carrossel.js"></script>
 </body>
 </html>
