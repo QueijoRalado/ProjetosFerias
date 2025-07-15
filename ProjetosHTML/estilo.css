@@ -1,7 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Bungee', sans-serif;
     background-image: url(IMG/fundo_do_mar.jpeg);
     background-repeat: no-repeat;
+    background-size: 100%;
     background-color: rgb(40, 98, 223);
 }
 
@@ -108,6 +113,34 @@ nav{
 
 /* Fim da parte do Carrossel */
 
+/* Começo da História do Restaurante */
+.historia{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.texto_historia{
+    font-size: larger;
+    width: 50%;
+    color: rgb(136, 236, 243);
+}
+.imagens_restaurante{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.imagens_restaurante img{
+    border: 2px rgb(150, 241, 188) solid;
+    border-radius: 10px;
+}
+.imagens_restaurante .imagem_grande{
+    justify-content: space-evenly
+}
+.imagens_restaurante .imagem_grande img{
+    width: 555px;
+}
+/* Fim da História */
+
 h1, p, li{
     color: rgb(136, 236, 243);
     text-align: center;
@@ -163,4 +196,5 @@ ul{
 
 .texto_generico{
     font-size: large;
+    margin-bottom: 40px;
 }
