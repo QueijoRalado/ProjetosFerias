@@ -1,0 +1,339 @@
+/* ---------- Geral ---------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Bungee', sans-serif;
+    background: url(IMG/fundo_do_mar.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(40, 98, 223);
+    color: rgb(230, 240, 245);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;       
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* ---------- Menu ---------- */
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: rgba(0, 99, 82, 0.95);
+    border-bottom: 3px solid rgb(150, 241, 188);
+}
+
+nav img{
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.opcoes_menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+}
+
+.opcoes_menu a{
+    font-size: 18px;
+    color: rgb(136, 236, 243);
+    transition: color 0.3s;
+}
+
+.opcoes_menu a:hover{
+    color: white;
+}
+
+/* ---------- Título Inicial ---------- */
+.titulos{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(150, 241, 188);
+    margin: 0 10px;
+}
+
+.sal_na_mao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.na{
+    font-size: 24px;
+    margin: 0;
+    color: rgb(200, 240, 240);
+}
+
+/* ---------- Parte do Carrossel ---------- */
+.slider{
+    margin-top: 170px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px rgb(150, 241, 188) solid;
+    border-radius: 10px;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid #20a6f2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+
+/* ---------- Texto do Começo ---------- */
+.texto_comeco {
+    margin-top: 110px;
+    width: 40%;
+    font-size: large;
+}
+
+.texto_generico {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* ---------- Parte da "Nossa História" ---------- */
+.secao_historia{
+    background-color:#20a6f2;
+}
+
+.historia {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-size: cover;
+}
+
+.texto_historia {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(230, 240, 245);
+}
+
+.imagens_restaurante {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imagens_restaurante img {
+    border: 3px solid rgb(150, 241, 188);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagens_restaurante img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.imagens_restaurante .imagem_grande img {
+    width: 555px;
+}
+
+.imagens_pequenas img {
+    width: 100%;
+    max-width: 270px;
+}
+
+/*
+.historia{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.texto_historia{
+    font-size: larger;
+    width: 50%;
+    color: rgb(136, 236, 243);
+}
+.imagens_restaurante{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.imagens_restaurante img{
+    border: 2px rgb(150, 241, 188) solid;
+    border-radius: 10px;
+}
+.imagens_restaurante .imagem_grande{
+    justify-content: space-evenly
+}
+.imagens_restaurante .imagem_grande img{
+    width: 555px;
+}
+*/
+
+
+/* ---------- Os Refrescos (o Resto) ---------- */
+h1, h2, h3, p, li {
+    color: rgb(230, 240, 245);
+    text-align: center;
+}
+
+
+/* --- Ajustes de texto/título em telas menores --- */
+@media (max-width: 768px) {
+    .titulos {
+        font-size: 50px;
+    }
+
+    .na {
+        font-size: 18px;
+    }
+
+    .texto_comeco {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .opcoes_menu {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .historia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto_historia {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .imagens_restaurante .imagem_grande img {
+        width: 80%;
+    }
+
+    .slider{
+    margin-top: 100px;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 5px rgb(150, 241, 188) solid;
+    border-radius: 10px;
+    }
+
+    .slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    }
+
+    .slides input{
+    display: none;
+    }
+
+    .slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    }
+
+    .slide img{
+    width: 800px;
+    }
+}
